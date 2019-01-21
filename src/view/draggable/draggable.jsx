@@ -301,14 +301,9 @@ export default class Draggable extends Component<Props> {
         this.getDraggingSnapshot(dragging),
       );
 
-      const placeholder: Node = (
-        <Placeholder placeholder={dragging.dimension.placeholder} />
-      );
-
       return (
         <Fragment>
           {child}
-          {placeholder}
         </Fragment>
       );
     }
